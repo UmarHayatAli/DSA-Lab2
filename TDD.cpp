@@ -8,7 +8,7 @@ bool isSorted(const int *arr, const int size) {
 
     for (int i = 0; i < size - 1; i++) {
         // The intentional bug: this will fail on duplicate numbers
-        if (arr[i] >= arr[i + 1]) { 
+        if (arr[i] > arr[i + 1]) { 
             return false;
         }
     }
